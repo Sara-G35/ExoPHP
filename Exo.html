@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tests Exercices</title>
+<script src="index.js"></script>
+</head>
+<body>
+  <script>
+    function assert(expression, message) {
+      if (!expression) {
+        document.write("<p style='color: red;'>Test Failed: " + message + "</p>");
+      } else {
+        document.write("<p style='color: green;'>Test Passed: " + message + "</p>");
+      }
+    }
+
+    // Test Exercice 1
+    assert(exo1() === 10, "Exercice 1");
+
+    // Test Exercice 2
+    assert(exo2() === 5, "Exercice 2");
+
+    // Test Exercice 3
+    assert(exo3() === 15, "Exercice 3");
+
+    // Test Exercice 4
+    assert(exo4(4) === 4, "Exercice 4");
+
+    // Test Exercice 5
+    assert(exo5() === 10, "Exercice 5");
+
+    // Test Exercice 6
+    assert(exo6(10) === true && exo6(15) === true && exo6(5) === false , "Exercice 6");
+
+    // Test Exercice 7
+    assert(exo7(4) === true && exo7(5) === false, "Exercice 7");
+
+    // Test Exercice 8
+    assert(JSON.stringify(exo8()) === JSON.stringify([1, 2, 3, 4, 5]), "Exercice 8");
+
+    // Test Exercice 9
+    assert(exo9() === 1, "Exercice 9");
+
+    // Test Exercice 10
+    assert(exo10() === 5, "Exercice 10");
+
+    // Test Exercice 11
+    assert(exo11() === 5, "Exercice 11");
+
+    // Test Exercice 12
+    assert(typeof exo12() === 'object' && exo12().hasOwnProperty('nom') && exo12().hasOwnProperty('prenom') && exo12().hasOwnProperty('age'), "Exercice 12");
+  </script>
+</body>
+</html>
